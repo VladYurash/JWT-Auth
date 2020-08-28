@@ -18,6 +18,22 @@ class AuthService {
       });
   }
 
+  //simple exmple to refactor all async op via async func
+
+  // async login(user) {
+  //   const res = axios.post(API_URL + 'signin', {
+  //       username: user.username,
+  //       password: user.password
+  //     })
+  //
+  //   if (res.data.accessToken) {
+  //     localStorage.setItem('user', JSON.stringify(res.data));
+  //   }
+  //
+  //   return res
+  // }
+
+
   logout() {
     localStorage.removeItem('user');
   }
